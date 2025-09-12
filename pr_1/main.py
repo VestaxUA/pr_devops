@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from data_input import input_product
+from calculations import *
+from general import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    products = input_product()
+    print(products)
 
+    calculate_stock_value(products)
+    calculate_discount(products)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    product_names = list(products.keys())
+    print_product_names(product_names)
 
+    # Приклад пошуку товару
+    find_product_by_name(products, "Товар2")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+if __name__ == "__main__":
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
