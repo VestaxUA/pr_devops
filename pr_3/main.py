@@ -25,9 +25,9 @@ eggs = []
 while 1:
     if random.randint(1, 100) == 1:
         eggs.append(Egg(canvas, 'red', score))
-            tk.update_idletasks()
-            tk.update()
-            time.sleep(0.01)
+    tk.update_idletasks()
+    tk.update()
+    time.sleep(0.01)
 
 tk.update()
 time.sleep(1)
