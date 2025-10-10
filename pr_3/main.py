@@ -1,5 +1,6 @@
 from tkinter import *
 from Score import Score
+from Catcher import Catcher
 import random
 import time
 
@@ -15,6 +16,7 @@ tk.update()
 time.sleep(3)
 
 score = Score(canvas)
+catcher = Catcher(canvas, 'blue', score)
 tk.update()
 time.sleep(1)
 
