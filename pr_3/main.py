@@ -1,4 +1,5 @@
 from tkinter import *
+from Score import Score
 import random
 import time
 
@@ -12,3 +13,8 @@ canvas.pack()
 
 tk.update()
 time.sleep(3)
+
+score = Score(canvas)
+tk.update()
+time.sleep(1)
+
