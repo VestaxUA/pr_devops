@@ -6,7 +6,7 @@ class Score:
         self.text = ""
         self.show_text()
 
-     def show_text(self):
+    def show_text(self):
         if (self.text == ""):
             self.text = self.canvas.create_text(350, 10, text=f"Спіймав: 0 Пропустив: 0", font=('Helvetica', 16))
         else:
@@ -19,4 +19,3 @@ class Score:
     def lost_egg(self):
         self.lost += 1
         self.show_text()
-

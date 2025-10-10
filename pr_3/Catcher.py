@@ -18,7 +18,7 @@ class Catcher:
 
     def turn_right(self, evt):
         # Якщо ловець не на краю справа, встановлюємо швидкість для руху вправо
-        if self.canvas.coords(self.id)[2] >= self.canvas_width:
+        if self.canvas.coords(self.id)[2] < self.canvas_width:
             self.x = 20
 
     def draw(self):
