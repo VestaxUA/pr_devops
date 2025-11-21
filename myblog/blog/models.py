@@ -25,6 +25,9 @@ class Post(models.Model):
         default=Status.DRAFT
     )
 
+    slug = models.SlugField(max_length=250, unique_for_date='publish')
+    publish = models.DateTimeField(default=timezone.now)
+
     objects = models.Manager()
     published = PublishedManager()
 
